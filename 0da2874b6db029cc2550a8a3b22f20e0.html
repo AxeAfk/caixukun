@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUN 蔡徐坤 | 艺人经纪官网</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background-color: #050505;
+            color: #ffffff;
+        }
+        /* 导航栏 */
+        nav {
+            width: 100%;
+            height: 72px;
+            background-color: #0f0f0f;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 70px;
+            border-bottom: 1px solid #d61938;
+        }
+        .logo-text {
+            font-size: 26px;
+            color: #d61938;
+            font-weight: 700;
+            letter-spacing: 4px;
+        }
+        .nav-links a {
+            color: #cccccc;
+            text-decoration: none;
+            margin: 0 16px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        .nav-links a:hover {
+            color: #d61938;
+        }
+        /* 首屏大图区域 */
+        .banner {
+            width: 100%;
+            height: 540px;
+            background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.7)), url("https://p3-hippo-sign.byteimg.com/tos-cn-i-a9yeduch1e/34301201208440189000202411081415~tplv-a9yeduch1e-image.image");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 80px;
+        }
+        .banner h1 {
+            font-size: 56px;
+            margin-bottom:14px;
+        }
+        .banner p {
+            color:#cccccc;
+            font-size:19px;
+            max-width: 600px;
+            line-height: 1.8;
+        }
+        .banner-tag {
+            margin-top:22px;
+            color:#d61938;
+            font-size:17px;
+        }
+        /* 内容容器 */
+        .wrap {
+            width: 86%;
+            margin:75px auto;
+        }
+        .section-title {
+            text-align:center;
+            margin-bottom:45px;
+        }
+        .section-title h2 {
+            font-size:30px;
+            display:inline-block;
+            border-bottom: 2px solid #d61938;
+            padding-bottom:8px;
+        }
+        .card-group {
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap:26px;
+        }
+        .card {
+            background:#121212;
+            padding:28px;
+            border-radius:12px;
+            border:1px solid #252525;
+            transition:0.3s;
+        }
+        .card:hover {
+            border-color:#d61938;
+            transform: translateY(-6px);
+        }
+        .card h3 {
+            color:#d61938;
+            font-size:21px;
+            margin-bottom:14px;
+        }
+        .card p {
+            color:#bbbbbb;
+            line-height:1.7;
+            font-size:15px;
+        }
+        /* 商务合作板块 */
+        .business-box {
+            width:86%;
+            margin:75px auto;
+            background:#121212;
+            padding:42px;
+            border-radius:12px;
+        }
+        .business-box h2 {
+            color:#d61938;
+            margin-bottom:20px;
+        }
+        .business-box p {
+            color:#bbbbbb;
+            line-height:2;
+            font-size:16px;
+        }
+        /* 页脚 */
+        footer {
+            width:100%;
+            background:#0f0f0f;
+            text-align:center;
+            padding:26px;
+            color:#777777;
+            border-top:1px solid #222;
+            margin-top:60px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo-text">KUN OFFICIAL</div>
+        <div class="nav-links">
+            <a href="#home">首页</a>
+            <a href="#intro">艺人简介</a>
+            <a href="#music">音乐作品</a>
+            <a href="#stage">舞台影像</a>
+            <a href="#coop">商务合作</a>
+        </div>
+    </nav>
+
+    <div class="banner" id="home">
+        <h1>蔡徐坤 KUN</h1>
+        <p>原创唱作人、舞台创作者。作为文化经纪人搭建本网站，用于艺人IP宣传、作品宣发、品牌商务对接，依托新兴媒介，完成艺人数字化运营。</p>
+        <div class="banner-tag">经纪业务：演出邀约｜品牌代言｜音乐企划｜视觉合作</div>
+    </div>
+
+    <div class="wrap">
+        <div class="section-title">
+            <h2>站点板块介绍</h2>
+        </div>
+        <div class="card-group">
+            <div class="card" id="intro">
+                <h3>艺人简介</h3>
+                <p>蔡徐坤，国内原创音乐人，深耕唱跳舞台创作，作品风格前卫，兼具艺术性与潮流属性。经纪人定位：高品质原创音乐人，面向青年受众，打造长期艺人IP。</p>
+            </div>
+            <div class="card" id="music">
+                <h3>音乐作品</h3>
+                <p>收录专辑、单曲、MV，作为官方作品展示阵地。配合短视频平台同步新歌宣发，保护音乐版权，向媒体、粉丝集中展示创作成果。</p>
+            </div>
+            <div class="card" id="stage">
+                <h3>舞台影像</h3>
+                <p>演唱会、晚会舞台、造型视觉素材库，统一管理艺人视觉物料，为合作方提供合规素材，持续塑造统一、有辨识度的艺人形象。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="business-box" id="coop">
+        <h2>商务合作通道</h2>
+        <p>✅ 可承接项目：品牌代言、音乐节演出、卫视晚会、广告拍摄、音乐联名企划<br>
+        📩 经纪对接人：文化经纪人<br>
+        📮 合作邮箱：kun-agent-work@163.com
+        </p>
+    </div>
+
+    <footer>
+        © 2026 KUN艺人经纪网站｜课程作业·文化经纪理论与实务｜文产2501班
+    </footer>
+</body>
+</html>
